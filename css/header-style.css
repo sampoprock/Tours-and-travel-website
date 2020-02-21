@@ -1,0 +1,190 @@
+header {
+      width: 100%;
+     /* height: 100vh;*/
+      z-index: -1;
+      background: url(../img/hero.jpg) no-repeat;
+      background-size: cover;
+      box-sizing: border-box;
+    }
+
+.content {
+  position:relative;
+  top:300px;
+  left:200px;
+  width: 24%;
+  color: #eeee;
+  box-sizing: border-box;
+  font-size: 20px;
+  font-family: "Lucida Sans Unicode";
+  line-height: 30px;
+  text-align: justify;
+}
+
+.logo {
+      line-height: 60px;
+      position: fixed;
+      float: left;
+      margin: 16px 46px;
+      color: #eeee;
+      font-weight: bold;
+      font-size: 30px;
+      letter-spacing: 2px;
+}
+
+nav {
+      z-index: 1;
+      position: fixed;
+      width: 100%;
+      line-height: 60px;
+}
+
+nav ul {
+      line-height: 60px;
+      list-style: none;
+      background: rgba(0, 0, 0, 0);
+      overflow: hidden;
+      color: #fff;
+      padding: 0;
+      text-align: right;
+      margin: 0;
+      padding-right: 40px;
+      transition: 1s;
+}
+
+nav.black ul {
+     background: rgb(52,58,64,0.9);
+}
+
+nav ul li {
+      display: inline-block;
+      padding: 16px 40px;
+      font-weight: bold;
+}
+nav ul li:hover {
+  text-decoration: none;
+  color: white;
+  outline: none;
+}
+nav ul li:focus {
+  outline: none;
+}
+
+nav ul li a {
+      text-decoration: none;
+      color: #ffff;
+      font-size: 16px;
+}
+
+header .row {
+  box-sizing: border-box;
+  padding-top: 200px;
+  padding-left: 154px;
+  padding-right: 154px;
+}
+
+.menu-icon {
+      line-height: 60px;
+      width: 100%;
+      background: #000;
+      text-align: right;
+      box-sizing: border-box;
+      padding: 15px 24px;
+      cursor: pointer;
+      color: #fff;
+      display: none;
+}
+#para {
+  box-sizing: border-box;
+  color: white;
+}
+#my-form {
+  position: relative;
+  padding:0px;
+  box-sizing: border-box;
+  margin-top: 50px;
+  margin-bottom: 5%;
+}
+
+#my-form ul {
+  border:none;
+}
+
+#my-form ul .tab-button {
+  display: inline-block;
+}
+.tab-button {
+  cursor: pointer;
+}
+
+.tab-panel form input {
+  width:100%;
+  margin:10px 0px;
+  height: 40px;
+  padding-left: 8px;
+  border:1px solid #C4C4C4;
+}
+.tab-panel form input:focus {
+  outline: none;
+}
+.tab-panel {
+  box-sizing: border-box;
+  display: none;
+  padding-bottom: 30px;
+}
+.tab-content {
+  box-sizing: border-box;
+  min-width: 400px;
+  max-width: 400px;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: white;
+}
+.tab-button .nav-item .nav-link {
+  font-weight: bold;
+}
+.tab-button .nav-item .nav-link:hover {
+  border-color: transparent;
+}
+.tab-panel {
+    animation: slide-down 0.7s ease-out;
+}
+
+@keyframes slide-down {
+    0% { opacity: 0;}
+    100% { opacity: 1;}
+}
+
+
+@media(max-width: 786px) {
+
+      .logo {
+            position: fixed;
+            top: 0;
+            margin-top: 16px;
+      }
+
+      nav ul {
+            max-height: 0px;
+            background: #000;
+      }
+
+      nav.black ul {
+            background: #000;
+      }
+
+      .showing {
+            max-height: 34em;
+      }
+
+      nav ul li {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 24px;
+            text-align: center;
+      }
+
+      .menu-icon {
+            display: block;
+      }
+
+}

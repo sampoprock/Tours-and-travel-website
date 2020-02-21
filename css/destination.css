@@ -1,0 +1,9 @@
+.destinations {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.destinations .btn {
+    float: right;
+    margin-right: 50px;
+    margin-top: 50px;
+}
